@@ -13,7 +13,7 @@ func RomanToInt(s string) int {
 
 	integer := 0
 
-	for i := 0; i < len(s)-1; i++ {
+	for i := range len(s) - 1 {
 		current := m[rune(s[i])]
 		next := m[rune(s[i+1])]
 
