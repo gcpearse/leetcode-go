@@ -11,7 +11,7 @@ func IsValid(s string) bool {
 		'{': '}',
 	}
 
-	var stack = []rune{}
+	stack := []rune{}
 
 	for _, char := range s {
 		if _, ok := pairs[char]; ok {
