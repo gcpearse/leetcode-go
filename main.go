@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	easy "github.com/gcpearse/leetcode-go/easy/problems"
+)
 
 func main() {
-	fmt.Println("Hello, world!")
+	fmt.Println(easy.Example())
 }
