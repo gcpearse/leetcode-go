@@ -1,0 +1,3 @@
+package hard
+
+func Example() {}
