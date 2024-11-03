@@ -21,3 +21,6 @@ jobs:
 
       - name: Test medium problems
         run: go test ./medium/tests
+
+      - name: Test medium problems
+        run: go test ./hard/tests
