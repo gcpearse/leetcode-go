@@ -2,7 +2,7 @@ package easy
 
 import "strings"
 
-func StrStr(haystack string, needle string) int {
+func StrStr(haystack, needle string) int {
 	return strings.Index(haystack, needle)
 }
 
