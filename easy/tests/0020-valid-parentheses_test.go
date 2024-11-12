@@ -6,22 +6,20 @@ import (
 	easy "github.com/gcpearse/leetcode-go/easy/problems"
 )
 
-type isValidTest struct {
-	s    string
-	want bool
-}
-
-var isValidTests = []isValidTest{
-	{"()", true},
-	{"()[]{}", true},
-	{"(]", false},
-	{"([])", true},
-	{"]", false},
-	{"){", false},
-}
-
 func TestIsValid(t *testing.T) {
-	for _, test := range isValidTests {
+	tests := []struct {
+		s    string
+		want bool
+	}{
+		{"()", true},
+		{"()[]{}", true},
+		{"(]", false},
+		{"([])", true},
+		{"]", false},
+		{"){", false},
+	}
+
+	for _, test := range tests {
 		if got := easy.IsValid(test.s); got != test.want {
 			t.Errorf("got: %v, wanted: %v", got, test.want)
 		}
