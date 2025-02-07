@@ -1,3 +1,0 @@
-package hard
-
-func Example() {}
